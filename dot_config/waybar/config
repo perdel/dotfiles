@@ -1,0 +1,112 @@
+{
+    "height": 36, // Waybar height (to be removed for auto height)
+    "layer": "top", // Waybar at top layer
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-bottom": 0,
+    "margin-right": 0,
+    "modules-left": ["custom/launcher", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["backlight", "custom/gammastep", "pulseaudio", "network", "battery", "custom/energy-consumption", "custom/power-menu"],
+
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "urgent": "",
+        "active": "",
+        "default": ""
+      }
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "interval": 1,
+        "format-alt": " {:%a %b %d  %H:%M:%S}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+
+    "backlight": {
+        "device": "DP-1",
+        "format": "{icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+        "tooltip-format": "{percent}%",
+    },
+
+    "network": {
+        "format-wifi": " ",
+        "format-ethernet": " ",
+        "format-disconnected": "",
+        "tooltip-format": "{signalStrength}%",
+    },
+
+    "pulseaudio": {
+        "format": "{icon} ",
+        "format-bluetooth": "  {volume}%",
+        "format-bluetooth-muted": " ",
+        "format-muted": " ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "tooltip-format": "{volume}%",
+    },
+
+    "battery": {
+      "bat": "BAT0",
+      "adapter": "ADP0",
+      "interval": 60,
+      "states": {
+          "warning": 30,
+          "critical": 10
+      },
+      "max-length": 20,
+      "format": "{icon}  {capacity}%",
+      "format-warning": "{icon} {capacity}%",
+      "format-critical": "{icon} {capacity}%",
+      "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
+      "format-plugged": "  {capacity}%",
+      "format-full": "  {capacity}%",
+      "format-icons": [" ", " ", " ", " ", " "],
+    },
+
+    "custom/energy-consumption": {
+      "exec": "bash ~/.config/waybar/scripts/energy-consumption.sh",
+      "restart-interval": 5,
+      "return-type": "string",
+      "format": "󰛨  {} W",
+      "tooltip": false
+    },
+
+    "custom/power-menu": {
+        "format": "⏻ ",
+        "on-click": "bash ~/.config/waybar/scripts/powermenu.sh",
+      "tooltip": false
+    },
+
+    "custom/launcher": {
+        "format": " ",
+        "on-click": "rofi -show drun",
+      "tooltip": false
+    },
+
+    "custom/gammastep":{
+        "format": "",
+        "on-click-right": "bash ~/.config/waybar/scripts/gammastep.sh --increase",
+        "on-click": "bash ~/.config/waybar/scripts/gammastep.sh --decrease",
+        "on-click-middle": "bash ~/.config/waybar/scripts/gammastep.sh --toggle",
+        "tooltip": false,
+    },
+
+}

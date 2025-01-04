@@ -1,0 +1,105 @@
+* {
+  font-family: FontAwesome, Fira Sans;
+  font-size: 17px;
+}
+
+window#waybar {
+  background-color: rgba(30, 30, 46, 1.0);
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px;
+  transition-duration: 0.5s;
+  margin: 0px 0px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  color: #3b4252;
+  background-color: #1e1e2e;
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each workspace name */
+  border: none;
+  border-radius: 0;
+}
+
+#workspaces button.focused {
+  color: #bf616a;
+}
+
+#workspaces button.active {
+  color: #d08770;
+}
+
+#workspaces button.urgent {
+  color: #bf616a;
+}
+
+#window {
+  color: #64727d;
+}
+
+#clock,
+#battery,
+#backlight,
+#network,
+#pulseaudio,
+#custom-power-menu,
+#custom-gammastep,
+#custom-launcher,
+#custom-energy-consumption,
+#window,
+#workspaces {
+    padding: 0 15px;
+    margin: 5px 0px;
+    color: rgb(205, 214, 244);
+}
+
+#custom-power-menu {
+  background-color: rgb(69, 71, 90);
+  border-radius: 15px;
+}
+
+#custom-launcher {
+  background-color: rgb(69, 71, 90);
+  border-radius: 15px;
+}
+
+#clock {
+  background-color: rgb(69, 71, 90);
+  border-radius: 15px;
+}
+
+@keyframes blink {
+  to {
+    color: #abb2bf;
+  }
+}
+
+#battery.critical:not(.charging) {
+  color: #1a1a1a;
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
