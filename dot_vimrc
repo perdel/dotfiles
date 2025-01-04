@@ -1,0 +1,106 @@
+"         _
+"  _   __(_)___ ___  __________
+" | | / / / __ `__ \/ ___/ ___/
+" | |/ / / / / / / / /  / /__
+" |___/_/_/ /_/ /_/_/   \___/
+"
+
+" This line should not be removed as it ensures that various options are
+" properly set to work with the Vim-related packages.
+runtime! archlinux.vim
+
+" Easy plugin management
+execute pathogen#infect()
+
+" If you prefer the old-style vim functionalty, add 'runtime! vimrc_example.vim'
+" Or better yet, read /usr/share/vim/vim74/vimrc_example.vim or the vim manual
+" and configure vim to your own liking!
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General stuff                                                               "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" How many lines will be remembered by vim
+set history=700
+
+" Filytype plugins activated
+filetype plugin on
+filetype indent on
+set shellslash
+set grepprg=grep\ -nH\ $*
+
+
+let g:airline_theme='simple'
+let g:airline_powerline_fonts = 1
+
+let g:indentLine_char='│'
+
+" Non vi-compatible
+set nocompatible
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" User interface                                                              "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Set 2 lines when moving up and down
+set so=2
+
+" Line numbering (relative)
+set number
+set relativenumber
+
+" Search options
+set hlsearch
+set incsearch
+
+" Some rules about cases
+set ignorecase
+set smartcase
+
+" The wildmenu
+set wildmenu
+set wildmode=list,full
+
+" Show current position
+set ruler
+
+" More intuitive splits and easier navigation
+set splitbelow
+set splitright
+
+" XXX
+set t_RV=
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Text formatting
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Tabs are spaces
+set expandtab
+set smarttab
+
+" One tab -> four spaces
+set shiftwidth=4
+set tabstop=4
+
+" Linebreak on 500 characters
+set lbr
+set tw=80
+
+set ai
+set si
+set wrap
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Color
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Enable syntax highlighting
+syntax on
+
+colorscheme clean
+
+" Standard encoding
+set encoding=utf8
+set cursorline
+highlight clear SignColumn
