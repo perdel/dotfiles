@@ -1,0 +1,10 @@
+config:
+  show-name: false
+
+icons:
+  batcat: ""
+  btm: ""
+  python3: ""
+  python: ""
+  ssh: ""
+  sudo: ""
