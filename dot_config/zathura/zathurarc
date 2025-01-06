@@ -1,0 +1,74 @@
+#               __  __
+#  ____  ____ _/ /_/ /_  __  ___________ ___________
+# /_  / / __ `/ __/ __ \/ / / / ___/ __ `/ ___/ ___/
+#  / /_/ /_/ / /_/ / / / /_/ / /  / /_/ / /  / /__
+# /___/\__,_/\__/_/ /_/\__,_/_/   \__,_/_/   \___/
+#
+
+# Zathura configuration file
+# See man `man zathurarc'
+
+# Open document in fit-width mode by default
+set adjust-open "width"
+
+# One page per row by default
+set pages-per-row 1
+
+#stop at page boundries
+set scroll-page-aware "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+#zoom settings
+set zoom-min 10
+set guioptions ""
+
+# zathurarc-dark
+
+set font "Fira Sans 14"
+set default-fg "#cdd6f4"
+set default-bg "#1e1e2e"
+
+set statusbar-fg "#cdd6f4"
+set statusbar-bg "#1e1e2e"
+
+set inputbar-fg "#cdd6f4"
+set inputbar-bg "#1e1e2e"
+
+set notification-error-fg "#f38ba8"
+set notification-error-bg "#313244"
+
+set notification-warning-fg "#89b4fa"
+set notification-warning-bg "#313244"
+
+set highlight-color "#89b4fa"
+set highlight-active-color "#f38ba8"
+
+set completion-highlight-fg "#1e1e2e"
+set completion-highlight-bg "#89b4fa"
+
+set completion-fg "#cba6f7"
+set completion-bg "#313244"
+
+set notification-fg "#313244"
+set notification-bg "#89b4fa"
+
+set index-fg "#89b4fa"
+set index-bg "#1e1e2e"
+
+set index-active-fg "#313244"
+set index-active-bg "#89b4fa"
+
+set recolor "false"
+set recolor-lightcolor "#1e1e2e"
+set recolor-darkcolor "#89b4fa"
+set recolor-reverse-video "true"
+set recolor-keephue "false"
+
+set render-loading "false"
+set scroll-step 50
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+
+set selection-clipboard clipboard
