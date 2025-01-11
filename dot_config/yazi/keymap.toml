@@ -1,0 +1,13 @@
+[manager]
+prepend_keymap = [
+    {on   = "O", run  = "plugin open-with-cmd --args=block", desc = "Open with command in the terminal" },
+    {on   = "T", run  = "plugin max-preview", desc = "Maximize or restore preview" },
+    {on   = [ "b", "b" ], run  = "plugin bookmarks --args=save", desc = "Save current position as a bookmark" },
+    {on   = "'", run  = "plugin bookmarks --args=jump", desc = "Jump to a bookmark" },
+    {on   = [ "b", "d" ], run  = "plugin bookmarks --args=delete", desc = "Delete a bookmark" },
+    {on   = [ "b", "D" ], run  = "plugin bookmarks --args=delete_all", desc = "Delete all  bookmark" },
+]
+
+append_keymap = [
+    { on = [ "g", "m" ], run = "cd /media", desc = "Go to media" },
+]
