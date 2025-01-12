@@ -28,7 +28,23 @@
         "format": "{:%H:%M}",
         "interval": 1,
         "format-alt": " {:%a %b %d  %H:%M:%S}",
-        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<span size='14pt' font='VictorMono Nerd Font'>{calendar}</span>",
+        "calendar": {
+                    "mode"          : "month",
+                    "mode-mon-col"  : 6,
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#89b4fa'><b>{}</b></span>",
+                              "days":       "<span color='#cdd6f4'><b>{}</b></span>",
+                              "weekdays":   "<span color='#74c7ec'><b>{}</b></span>",
+                              "today":      "<span color='#f38ba8'><b>{}</b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
     },
 
     "backlight": {

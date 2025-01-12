@@ -3,6 +3,10 @@
   font-size: 17px;
 }
 
+tooltip {
+  background: rgba(30, 30, 46, 1.0);
+}
+
 window#waybar {
   background-color: rgba(30, 30, 46, 1.0);
   color: #ffffff;
