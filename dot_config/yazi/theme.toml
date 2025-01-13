@@ -2,3 +2,13 @@
 use = "catppuccin-mocha"
 # For upcoming Yazi 0.4 (nightly version):
 dark = "catppuccin-mocha"
+
+[icon]
+dirs = [
+	{ name = "coding", text = "", fg = "#89b4fa" },
+	{ name = "documents", text = "🖹", fg = "#89b4fa" },
+	{ name = "downloads", text = "", fg = "#89b4fa" },
+	{ name = "papers", text = "󱉟", fg = "#89b4fa" },
+	{ name = "work", text = "", fg = "#89b4fa" },
+	# ...
+]
