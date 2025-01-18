@@ -1,0 +1,11 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'VictorMono Nerd Font', 'monospace', monospace",
+    "workbench.sideBar.location": "right",
+    "git.autofetch": true,
+    "makefile.configureOnOpen": true,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "keyboard.dispatch": "keyCode",
+}
