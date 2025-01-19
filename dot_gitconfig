@@ -1,0 +1,39 @@
+#           _ __
+#    ____ _(_) /_
+#   / __ `/ / __/
+#  / /_/ / / /_
+#  \__, /_/\__/
+# /____/
+
+[user]
+    name = Delwin Perera
+    email = perera@mm.tu-darmstadt.de
+    signingkey = DF95D3B812C7F318D85F6324EBC884A6CF6DA1FA
+[core]
+    editor = vim
+    whitespace = fix,trailing-space,cr-at-eol
+    pager = delta
+[diff]
+    algorithm = histogram
+    tool = vimdiff
+[alias]
+    st = status -sb
+    cm = commit -sS
+    co = checkout
+    # find commits that changed a file: git his <filepath>
+    his = log --follow --color=always --date=format:'%d %b, %Y' --pretty=format:'(%Cgreen%h%Creset)[%ad] %C(blue bold)%s%Creset'
+    # search code in commit history: git wot :function_name:filepath
+    wot = log --date=format:'%d %b, %Y' --pretty='%n%C(yellow bold)📅️ %ad%Creset by (%C(green bold)%an%Creset) %C(cyan bold)%h%Creset' --graph -L
+    # top 10 most edited files
+    top10 = ! git log --pretty=format: --name-only | sort | uniq -c | sort -rg | head -10
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    dark = true      # or light = true, or omit for auto-detection
+[merge]
+    conflictstyle = zdiff3
