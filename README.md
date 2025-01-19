@@ -8,6 +8,7 @@ Dotfiles are managed with [`chezmoi`](https://www.chezmoi.io/).
 
 ## Terminal
 - Terminal Emulator: [Kitty](https://sw.kovidgoyal.net/kitty/)
+- Shell: [Zsh](https://zsh.sourceforge.io/) configured with [Oh My Zsh](https://ohmyz.sh/)
 
 ## Text editors
 - [Neovim](https://neovim.io/) with [AstroNvim](https://astronvim.com/) configuration
