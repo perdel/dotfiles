@@ -8,7 +8,7 @@ tooltip {
 }
 
 window#waybar {
-  background-color: rgba(30, 30, 46, 1.0);
+  background-color: rgba(17, 17, 27, 1.0);
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -23,8 +23,8 @@ window#waybar.hidden {
 
 #workspaces button {
   padding: 0 5px;
-  color: #585b70;
-  background-color: #1e1e2e;
+  color: #6c7086;
+  background-color: rgb(49, 50, 68);
   /* Use box-shadow instead of border so the text isn't offset */
   box-shadow: inset 0 -3px transparent;
   /* Avoid rounded borders under each workspace name */
@@ -64,18 +64,17 @@ window#waybar.hidden {
     color: rgb(205, 214, 244);
 }
 
-#custom-power-menu {
-  background-color: rgb(69, 71, 90);
-  border-radius: 15px;
+#workspaces {
+    background-color: rgb(49, 50, 68);
+    border-radius: 15px;
 }
 
 #custom-launcher {
-  background-color: rgb(69, 71, 90);
-  border-radius: 15px;
+  color: #89b4fa;
 }
 
 #clock {
-  background-color: rgb(69, 71, 90);
+  background-color: rgb(49, 50, 68);
   border-radius: 15px;
 }
 
