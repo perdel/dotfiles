@@ -18,9 +18,9 @@
     },
 
     "clock": {
-        "format": "{:%H:%M}",
+        "format": "{:%I:%M %p}",
         "interval": 1,
-        "format-alt": " {:%a %b %d  %H:%M:%S}",
+        "format-alt": "{:%a %b %d %I:%M:%S %p}",
         "tooltip-format": "<span size='14pt' font='VictorMono Nerd Font'>{calendar}</span>",
         "calendar": {
                     "mode"          : "month",
