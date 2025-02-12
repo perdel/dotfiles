@@ -4,7 +4,7 @@
 }
 
 tooltip {
-  background: rgba(30, 30, 46, 1.0);
+  background: rgba(17, 17, 27, 1.0);
 }
 
 window#waybar {
@@ -72,11 +72,6 @@ window#waybar.hidden {
 
 #custom-launcher {
   color: #89b4fa;
-}
-
-#clock {
-  background-color: rgb(49, 50, 68);
-  border-radius: 15px;
 }
 
 @keyframes blink {
