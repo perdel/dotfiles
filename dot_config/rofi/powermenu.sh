@@ -10,10 +10,10 @@ uptime="`uptime -p | sed -e 's/up //g'`"
 
 # Options
 shutdown=''
-reboot=''
+reboot=''
 lock=''
-suspend='󰤄'
-logout='󰍃'
+suspend=''
+logout=''
 yes=''
 no='❌'
 
