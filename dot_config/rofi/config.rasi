@@ -2,12 +2,12 @@
 configuration {
 	modi:                       "drun,run,filebrowser,window";
     show-icons:                 false;
-    display-drun:               " ";
+    display-drun:               " ";
     display-run:                " ";
     display-filebrowser:        " ";
     display-window:             " ";
 	drun-display-format:        "{name}";
-	window-format:              "{w} · {c} · {t}";
+	window-format:              "{c} · {t}";
 }
 
 /*****----- Global Properties -----*****/
@@ -107,7 +107,7 @@ textbox-prompt-colon {
     enabled:                     true;
     padding:                     5px 0px;
     expand:                      false;
-    str:                         "";
+    str:                         "🔍";
     background-color:            inherit;
     text-color:                  inherit;
 }
