@@ -112,9 +112,9 @@
 
     "custom/gammastep":{
         "format": "",
-        "on-click-right": "bash ~/.config/waybar/scripts/gammastep.sh --increase",
-        "on-click": "bash ~/.config/waybar/scripts/gammastep.sh --decrease",
-        "on-click-middle": "bash ~/.config/waybar/scripts/gammastep.sh --toggle",
+        "on-click-right": "~/.config/waybar/scripts/gammastep.sh --increase",
+        "on-click": "~/.config/waybar/scripts/gammastep.sh --decrease",
+        "on-click-middle": "~/.config/waybar/scripts/gammastep.sh --toggle",
         "tooltip": false,
     },
 
