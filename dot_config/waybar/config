@@ -58,7 +58,7 @@
         "format": "{icon} ",
         "format-bluetooth": "  {volume}%",
         "format-bluetooth-muted": " ",
-        "format-muted": " ",
+        "format-muted": " ",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -84,7 +84,7 @@
       "format": "{icon}  {capacity}%",
       "format-warning": "{icon} {capacity}%",
       "format-critical": "{icon} {capacity}%",
-      "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
+      "format-charging": " {capacity}%",
       "format-plugged": "  {capacity}%",
       "format-full": "  {capacity}%",
       "format-icons": [" ", " ", " ", " ", " "],
@@ -99,7 +99,7 @@
     },
 
     "custom/power-menu": {
-        "format": "⏻ ",
+        "format": " ",
         "on-click": "bash ~/.config/rofi/powermenu.sh",
       "tooltip": false
     },
