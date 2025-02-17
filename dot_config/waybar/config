@@ -48,17 +48,17 @@
     },
 
     "network": {
-        "format-wifi": " ",
-        "format-ethernet": " ",
+        "format-wifi": "",
+        "format-ethernet": "",
         "format-disconnected": "",
         "tooltip-format": "{signalStrength}%",
     },
 
     "pulseaudio": {
         "format": "{icon} ",
-        "format-bluetooth": "  {volume}%",
-        "format-bluetooth-muted": " ",
-        "format-muted": " ",
+        "format-bluetooth": " {volume}%",
+        "format-bluetooth-muted": "",
+        "format-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -80,14 +80,13 @@
           "warning": 30,
           "critical": 10
       },
-      "max-length": 20,
       "format": "{icon}  {capacity}%",
       "format-warning": "{icon} {capacity}%",
       "format-critical": "{icon} {capacity}%",
       "format-charging": " {capacity}%",
-      "format-plugged": "  {capacity}%",
-      "format-full": "  {capacity}%",
-      "format-icons": [" ", " ", " ", " ", " "],
+      "format-plugged": " {capacity}%",
+      "format-full": " {capacity}%",
+      "format-icons": ["", "", "", "", ""],
     },
 
     "custom/energy-consumption": {
@@ -99,13 +98,13 @@
     },
 
     "custom/power-menu": {
-        "format": " ",
+        "format": "",
         "on-click": "bash ~/.config/rofi/powermenu.sh",
       "tooltip": false
     },
 
     "custom/launcher": {
-        "format": " ",
+        "format": "",
         "on-click": "rofi -show drun",
       "tooltip": false
     },
