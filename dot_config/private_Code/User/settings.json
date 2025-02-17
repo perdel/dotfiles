@@ -8,4 +8,7 @@
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "catppuccin-mocha",
     "keyboard.dispatch": "keyCode",
+    "git.confirmSync": false,
+    "editor.fontSize": 16,
+    "git.alwaysSignOff": true,
 }
