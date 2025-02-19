@@ -80,13 +80,13 @@
           "warning": 30,
           "critical": 10
       },
-      "format": "{icon}  {capacity}%",
+      "format": "{icon} {capacity}%",
       "format-warning": "{icon} {capacity}%",
       "format-critical": "{icon} {capacity}%",
       "format-charging": " {capacity}%",
       "format-plugged": " {capacity}%",
       "format-full": " {capacity}%",
-      "format-icons": ["", "", "", "", ""],
+      "format-icons": [" ", " ", " ", " ", " "],
     },
 
     "custom/energy-consumption": {
