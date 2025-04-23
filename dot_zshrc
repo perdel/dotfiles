@@ -132,8 +132,6 @@ alias cu='checkupdates'
 alias pu='pip list --user -o'
 alias ls='exa --icons'
 alias cat='bat'
-alias vim='nvim'
-alias vimdiff='nvim -d'
 alias lg="lazygit"
 
 # Custom cd
