@@ -42,8 +42,7 @@
 
     "backlight": {
         "device": "DP-1",
-        "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+        "format": "",
         "tooltip-format": "{percent}%",
     },
 
@@ -93,7 +92,7 @@
       "exec": "bash ~/.config/waybar/scripts/energy-consumption.sh",
       "restart-interval": 5,
       "return-type": "string",
-      "format": "󰛨  {} W",
+      "format": "  {} W",
       "tooltip": false
     },
 
@@ -110,7 +109,7 @@
     },
 
     "custom/gammastep":{
-        "format": "",
+        "format": "",
         "on-click-right": "~/.config/waybar/scripts/gammastep.sh --increase",
         "on-click": "~/.config/waybar/scripts/gammastep.sh --decrease",
         "on-click-middle": "~/.config/waybar/scripts/gammastep.sh --toggle",
