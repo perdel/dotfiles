@@ -21,3 +21,10 @@ function add_sudo() {
 }
 zle -N add_sudo
 bindkey "^s" add_sudo
+
+function fzf-history-widget-accept() {
+  fzf-history-widget
+  zle accept-line
+}
+zle -N fzf-history-widget-accept
+bindkey '^R' fzf-history-widget-accept
