@@ -28,8 +28,6 @@ filetype indent on
 set shellslash
 set grepprg=grep\ -nH\ $*
 
-
-let g:airline_theme='simple'
 let g:airline_powerline_fonts = 1
 
 let g:indentLine_char='│'
@@ -112,7 +110,8 @@ set wrap
 " Enable syntax highlighting
 syntax on
 
-colorscheme clean
+set termguicolors
+colorscheme catppuccin_mocha
 
 " Standard encoding
 set encoding=utf8
