@@ -49,6 +49,20 @@ set so=2
 set number
 set relativenumber
 
+" Switch between different line number styles
+function! ToggleLineNumbers()
+  if &number && &relativenumber
+    set norelativenumber
+  elseif &number
+    set nonumber
+  else
+    set number relativenumber
+  endif
+endfunction
+
+nnoremap <silent> <leader>n :call ToggleLineNumbers()<CR>
+
+
 " Search options
 set hlsearch
 set incsearch
