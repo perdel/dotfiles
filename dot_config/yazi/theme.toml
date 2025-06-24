@@ -10,5 +10,6 @@ dirs = [
 	{ name = "downloads", text = "", fg = "#89b4fa" },
 	{ name = "papers", text = "󱉟", fg = "#89b4fa" },
 	{ name = "work", text = "", fg = "#89b4fa" },
+	{ name = "go", text = "", fg = "#89b4fa" },
 	# ...
 ]

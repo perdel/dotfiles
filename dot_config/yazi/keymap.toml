@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 prepend_keymap = [
     {on   = "O", run  = "plugin open-with-cmd --args=block", desc = "Open with command in the terminal" },
     {on   = "T", run  = "plugin toggle-pane max-preview", desc = "Maximize or restore preview" },
